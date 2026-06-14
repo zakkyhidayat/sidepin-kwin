@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Name": "SidePin",
+        "Description": "Pin any window as a floating side panel: always-on-top, on all desktops, resizable. Like SideHover/Sidepeek on macOS.",
+        "Icon": "window-pin",
+        "Authors": [
+            {
+                "Name": "Zakky Hidayat",
+                "Email": "zakkyhidayat@gmail.com"
+            }
+        ],
+        "Id": "sidepin",
+        "Version": "3.0.0",
+        "License": "GPL-3.0",
+        "Website": ""
+    },
+    "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+    "X-Plasma-API": "declarativescript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}
