@@ -16,7 +16,7 @@
    <item row="0" column="1">
     <widget class="QSpinBox" name="kcfg_dockSize">
      <property name="minimum"><number>8</number></property>
-     <property name="maximum"><number>48</number></property>
+     <property name="maximum"><number>60</number></property>
      <property name="singleStep"><number>4</number></property>
      <property name="suffix"><string> px</string></property>
     </widget>

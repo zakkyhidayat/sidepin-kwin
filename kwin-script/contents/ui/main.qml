@@ -23,7 +23,7 @@ Item {
 
     // ── Config (read per call so ⚙ Apply takes effect without script reload) ─
     function peekPx() {
-        return Math.min(48, Math.max(8, KWin.readConfig("dockSize", 8)));
+        return Math.min(60, Math.max(8, KWin.readConfig("dockSize", 8)));
     }
     function pinHeightRatio() {
         return Math.min(100, Math.max(20, KWin.readConfig("heightPercent", 80))) / 100;
