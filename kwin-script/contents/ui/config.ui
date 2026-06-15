@@ -3,7 +3,7 @@
  <class>SidePinConfig</class>
  <widget class="QWidget" name="SidePinConfig">
   <property name="geometry">
-   <rect><x>0</x><y>0</y><width>420</width><height>160</height></rect>
+   <rect><x>0</x><y>0</y><width>420</width><height>200</height></rect>
   </property>
   <layout class="QFormLayout" name="formLayout">
    <property name="margin"><number>16</number></property>
@@ -16,17 +16,30 @@
    <item row="0" column="1">
     <widget class="QSpinBox" name="kcfg_dockSize">
      <property name="minimum"><number>8</number></property>
-     <property name="maximum"><number>48</number></property>
+     <property name="maximum"><number>60</number></property>
      <property name="singleStep"><number>4</number></property>
      <property name="suffix"><string> px</string></property>
     </widget>
    </item>
    <item row="1" column="0">
+    <widget class="QLabel" name="labelWidth">
+     <property name="text"><string>Panel width:</string></property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QSpinBox" name="kcfg_widthPercent">
+     <property name="minimum"><number>10</number></property>
+     <property name="maximum"><number>50</number></property>
+     <property name="singleStep"><number>5</number></property>
+     <property name="suffix"><string> %</string></property>
+    </widget>
+   </item>
+   <item row="2" column="0">
     <widget class="QLabel" name="labelHeight">
      <property name="text"><string>Window height:</string></property>
     </widget>
    </item>
-   <item row="1" column="1">
+   <item row="2" column="1">
     <widget class="QSpinBox" name="kcfg_heightPercent">
      <property name="minimum"><number>20</number></property>
      <property name="maximum"><number>100</number></property>
@@ -34,7 +47,7 @@
      <property name="suffix"><string> %</string></property>
     </widget>
    </item>
-   <item row="2" column="0" colspan="2">
+   <item row="3" column="0" colspan="2">
     <widget class="QLabel" name="labelHint">
      <property name="text">
       <string>Panel always pins to the right edge. Assign shortcuts in System Settings → Keyboard Shortcuts: "SidePin: Pin" (pin/unpin) and "SidePin: Stash" (stash/unstash)</string>
