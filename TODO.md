@@ -3,7 +3,8 @@
 KWin Script for stashing a window to the right screen edge.
 Target: Plasma 6.6 / KWin 6.6 (Wayland).
 
-**Current state (2026-06-14): v1.0 — loaded and verified on Wayland.**
+**Current state: v3.0.0 (`kwin-script/metadata.json`).** The v1.0 build was verified on Wayland; v3.0.0 has not been noted as verified in a live session.
+Not yet tested against Plasma 6.7.x or 6.8 — needs a live session test.
 
 ---
 
@@ -24,7 +25,7 @@ Target: Plasma 6.6 / KWin 6.6 (Wayland).
 
 ## Architecture notes
 
-**v1.0 — right-only**
+**Right-only layout**
 - Right edge only (left-side support intentionally removed)
 - State: `pinned: Map` (at most 1 entry), `isPinned: bool`, `pinnedKey: string`
 - `pinGeometry(entry)` always right-side only: configurable width (10–50%), configured height, flush-right, vertically centered
@@ -43,4 +44,4 @@ gdbus call --session --dest org.kde.KWin --object-path /KWin --method org.kde.KW
 but in-memory compiled component persists across reloads within the same KWin process.
 Only logout+login fully reloads the script from disk.
 
-**Backup:** `backup/v2.4.1/` — last version with left/right side support (pre-v1.0).
+**History:** the left/right-side version (v2.4.1) is not kept in this repo; use git history (`git log`) to find it.

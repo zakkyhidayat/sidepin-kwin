@@ -13,7 +13,7 @@
         "Id": "sidepin",
         "Version": "3.0.0",
         "License": "GPL-3.0",
-        "Website": ""
+        "Website": "https://github.com/zakkyhidayat/sidepin-kwin"
     },
     "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
     "X-Plasma-API": "declarativescript",
