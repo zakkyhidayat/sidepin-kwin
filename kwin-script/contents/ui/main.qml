@@ -15,7 +15,8 @@ Item {
     id: root
 
     Component.onCompleted:
-        log("v3.0.0 loaded — dock=" + peekPx() + "px height=" + Math.round(pinHeightRatio() * 100) + "%")
+        log("loaded — dock=" + peekPx() + "px width=" + Math.round(pinWidthRatio() * 100)
+            + "% height=" + Math.round(pinHeightRatio() * 100) + "%")
 
     // ── Constants ─────────────────────────────────────────────────────────
     function pinWidthRatio() {

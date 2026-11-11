@@ -16,7 +16,7 @@ When pinned, a window docks to the **right edge** of the screen: always-on-top, 
 - Restores pre-pin size and centers the window when unpinned
 - Drag the pinned panel to unpin and restore original size
 - Two assignable shortcuts: **Pin** and **Stash**
-- Configurable: dock strip size and panel height percentage
+- Configurable: dock strip size, panel width (10–50 %) and panel height (20–100 %)
 
 ---
 
@@ -73,8 +73,9 @@ Open **System Settings → Window Management → KWin Scripts**, click the **⚙
 
 | Setting | Default | Description |
 |---|---|---|
-| Dock size | 8 px | Width of the peek strip visible when panel is stashed |
-| Window height | 80 % | Height of the pinned panel relative to your work area |
+| Dock size | 8 px | Width of the peek strip visible when panel is stashed (8–60 px) |
+| Panel width | 40 % | Width of the pinned panel relative to the screen width (10–50 %) |
+| Window height | 80 % | Height of the pinned panel relative to your work area (20–100 %) |
 
 Click **Apply** — no restart needed for size changes.
 
